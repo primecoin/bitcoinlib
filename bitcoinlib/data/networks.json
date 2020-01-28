@@ -32,6 +32,56 @@
     "fee_max": 1000000,
     "priority": 2
   },
+  "primecoin":
+  {
+    "description": "Primecoin",
+    "currency_name": "primecoin",
+    "currency_name_plural": "primecoins",
+    "currency_symbol": "฿",
+    "currency_code": "XPM",
+    "prefix_address": "17",
+    "prefix_address_p2sh": "53",
+    "prefix_bech32": "xpm",
+    "prefix_wif": "97",
+    "prefixes_wif": [
+      ["0488B21E", "xpub", "public",  false, "legacy",      "p2pkh"],
+      ["0488B21E", "xpub", "public",  true,  "legacy",      "p2sh"],
+      ["0488ADE4", "xprv", "private", false, "legacy",      "p2pkh"],
+      ["0488ADE4", "xprv", "private", true,  "legacy",      "p2sh"]
+    ],
+    "bip44_cointype": 24,
+    "denominator": 0.00000001,
+    "dust_amount": 1000000,
+    "fee_default": 102400000,
+    "fee_min": 102400000,
+    "fee_max": 512000000,
+    "priority": 12
+  },
+  "primecoin_testnet":
+  {
+    "description": "Primecoin Test Network",
+    "currency_name": "test-primecoin",
+    "currency_name_plural": "test-primecoins",
+    "currency_symbol": "TXPM",
+    "currency_code": "TXPM",
+    "prefix_address": "6F",
+    "prefix_address_p2sh": "C4",
+    "prefix_bech32": "txpm",
+    "prefix_wif": "EF",
+    "prefixes_wif": [
+      ["043587CF", "tpub", "public",  false, "legacy",      "p2pkh"],
+      ["043587CF", "tpub", "public",  true,  "legacy",      "p2sh"],
+      ["04358394", "tprv", "private", false, "legacy",      "p2pkh"],
+      ["04358394", "tprv", "private", true,  "legacy",      "p2sh"]
+    ],
+    "bip44_cointype": 1,
+    "denominator": 0.00000001,
+    "dust_amount": 1000000,
+    "fee_default": 102400000,
+    "fee_min": 102400000,
+    "fee_max": 512000000,
+    "priority": 8
+  },
   "bitcoin":
   {
     "description": "Bitcoin",

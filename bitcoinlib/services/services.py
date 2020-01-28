@@ -127,7 +127,7 @@ class Service(object):
             if self.resultcount >= self.max_providers:
                 break
             try:
-                if sp not in ['bitcoind', 'litecoind', 'dashd'] and not self.providers[sp]['url'] and \
+                if sp not in ['primecoind', 'bitcoind', 'litecoind', 'dashd'] and not self.providers[sp]['url'] and \
                         self.network.name != 'bitcoinlib_test':
                     continue
                 client = getattr(services, self.providers[sp]['provider'])
